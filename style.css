@@ -1,0 +1,142 @@
+:root {
+  background: #f5f6fa;
+  color: #9c9c9c;
+  font: 1rem "PT Sans", sans-serif;
+}
+html, body, .container {
+  height: 100%;
+  background: url(image1.jpg) no-repeat center center fixed; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  color: #7f8ff4;
+}
+
+h1{
+	text-align: left;
+	padding: 20px 20px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: #7f8ff4;
+	font-size: 200%;
+	letter-spacing: 2px;
+	font-weight: 600;
+	word-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.text{
+	font-size: 400%;
+}
+
+
+
+
+
+
+.fancy {
+	text-align: center;
+	height: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+.btn--primary {
+  background: #7f8ff4;
+  color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  padding: 12px 36px;
+}
+.btn--primary:hover {
+  background: #6c7ff2;
+}
+.btn--primary:active {
+  background: #7f8ff4;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+.btn--inside {
+  margin-left: -96px;
+}
+.form__field {
+  width: 400px;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
+}
+
+
+
+//** kjashfkjahsdkdf **//
+
+.logo {
+    margin: 50px auto;
+    text-align: center;
+
+    a {
+    text-decoration: none;
+    
+    @include transform(perspective(2.5em) rotateX(15deg) scaleY(0.8));
+    @include transition(all 0.5s);
+
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 75px;
+    font-weight: 700;
+    font-family: 'Exo 2';
+    line-height: 0.8;
+
+    color: lighten($col-secondary, 10%);
+
+    text-shadow: 0 -1px 15px rgba(0,0,0,0.9),
+                  0 1px 0 adjust-hue(darken($col-secondary, 22%), -3deg),
+                   0 3px 0 adjust-hue(darken($col-secondary, 21%), -3deg),
+                   0 5px 0 adjust-hue(darken($col-secondary, 20%), -3deg),
+                   0 7px 0 adjust-hue(darken($col-secondary, 19%), -3deg),
+                   0 9px 0 adjust-hue(darken($col-secondary, 18%), -3deg),
+                    0 6px 50px transparentize(lighten($col-secondary, 20%), 0.2);
+
+    &:first-line {
+      font-size: 0.8em;
+    }
+
+    &:hover {
+      @include transform(perspective(8em) rotateX(11deg) scale(1.2));
+
+      text-shadow: 0 -1px 15px black,
+                    0 1px 0 adjust-hue(darken($col-secondary, 22%), -3deg),
+                     0 2px 0 adjust-hue(darken($col-secondary, 21%), -3deg),
+                     0 0px 0 adjust-hue(darken($col-secondary, 20%), -3deg),
+                     0 1px 0 adjust-hue(darken($col-secondary, 19%), -3deg),
+                     0 2px 0 adjust-hue(darken($col-secondary, 18%), -3deg),
+                      0 2px 30px transparentize(lighten($col-secondary, 20%), 0.4);
+        }
+    }
+}
